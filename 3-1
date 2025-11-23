@@ -1,0 +1,28 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("wpisz znak");
+    String ch = sc.nextLine();
+    int h = 5;
+    int c = h;
+    for (int i = 1; i <= c*2-1; i+=2){
+      for (int j = 0; j < h; j++){
+        System.out.print(" ");
+      }
+      for (int j = 0; j < i; j++){
+        System.out.print(ch);
+      }
+      System.out.println();
+      h--;
+    }
+    }
+  }
+  
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
